@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biodata Diri</title>
+
+<style>
+
+/* Background */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0b9e2a, #36b351);
+}
+
+/* Card utama */
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 40px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: 0.4s;
+    animation: muncul 1s ease;
+}
+
+/* Efek hover */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+}
+
+/* Foto */
+.foto {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+/* Nama */
+h1 {
+    margin: 10px 0;
+    color: white;
+    font-size: 28px;
+}
+
+/* Garis dekorasi */
+.line {
+    width: 60px;
+    height: 4px;
+    background: white;
+    margin: 15px auto;
+    border-radius: 10px;
+}
+
+/* Deskripsi */
+.deskripsi {
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 25px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.8);
+}
+
+/* Animasi masuk */
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- Ganti foto.jpg dengan foto kamu -->
+    <img src="ASDFGHJKL.jpeg" class="foto" alt="Foto Profil">
+
+    <h1>Muhammad Syahrun</h1>
+    <div class="line"></div>
+
+    <p class="deskripsi">
+        Halo, perkenalkan nama saya <b>Muhammad Syahrun</b>. Saya adalah seseorang yang
+        memiliki semangat tinggi dalam belajar dan mengembangkan diri. Saya
+        mempunyai hobi olahraga seperti futsal, badminton, sepak bola. Saya adalah mahasiswa aktif Universitas Hasanuddin Prodi Terapis gigi semester 4. Saya juga masuk organisasi yaitu HIMATERAGI UH berada pada divisi Ekonomi kreatif yang dimana tugas di bidang Ekonomi kreatif itu mengumpulkan dana sebagai keberlansungannya organisasi HIMATERAGI UH tersebut.
+    </p>
+
+    <div class="footer">
+        Makassar, Jl Antang Raya komp unhas Blok D 16 A
+    </div>
+
+</div>
+
+</body>
+</html>
